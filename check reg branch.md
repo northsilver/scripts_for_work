@@ -1,0 +1,1 @@
+Invoke-Command -Computer (get-content servers.txt) -ScriptBlock {Get-ItemProperty -Path: HKLM:SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Run -Name st}
